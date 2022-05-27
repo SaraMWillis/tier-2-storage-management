@@ -37,8 +37,8 @@ e) Edit this remote
 d) Delete this remote
 y/e/d> y
 e/n/d/r/c/s/q> q
-[sarawillis@sdmz-dtn-4 ~]$ rclone ls AWS:ua-rt-t2-sarawillis
-      471 DEVEL/cluster-busy-devel/backups/11192021-cluster-busy-backup
+[sarawillis@sdmz-dtn-4 ~]$ rclone ls AWS:your-bucket-name
+... ### your bucket contents ###
 ```
 # Storage classes:
 
