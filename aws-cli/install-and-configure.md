@@ -1,3 +1,5 @@
+# Install 
+
 Information on installing: https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html
 
 ```console
@@ -22,4 +24,14 @@ For my original install, I added the bin directory to my PATH in my bashrc:
 ```console
 [sarawillis@cpu23 aws]$ cat ~/.bashrc | grep aws
 export PATH=$PATH:$HOME/.local/bin:$HOME/bin:/home/u21/sarawillis/bin/aws-cli/v2/2.7.1/bin
+```
+
+# Configure
+
+```console
+[sarawillis@cpu23 aws]$ aws configure
+AWS Access Key ID [None]: YOUR_ACCESS_KEY
+AWS Secret Access Key [None]: YOUR_SECRET_ACCESS_KEY
+Default region name [None]: us-west-2
+Default output format [None]: json
 ```
