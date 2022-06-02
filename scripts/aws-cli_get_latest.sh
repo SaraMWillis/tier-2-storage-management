@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
-
 # taken from guide at https://github.com/SaraMWillis/tier-2-storage-management/blob/main/aws/aws-cli/install-and-configure.md
+
 if [ ! unzip ]; then
   echo "Installation on HPC: This action requires an interactive node or a storage node because unzip not available on login shell"
   exit 1
