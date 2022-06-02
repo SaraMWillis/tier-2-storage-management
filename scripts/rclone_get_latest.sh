@@ -5,6 +5,7 @@ _INSTALLED_BIN=$(go env GOPATH)/bin/rclone
 echo "Checking installation"
 if ! $_INSTALLED_BIN version; then
   echo "rclone not reachable at $_INSTALLED_BIN"
+  echo "You could try to install rclone using \`rclone_get_latest_github.sh\`"
   exit 1
 fi
 read -p "Enter desired binary directory [$HOME/.local/bin]: " BIN_DIR
