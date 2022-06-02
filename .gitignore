@@ -1,0 +1,5 @@
+scripts/*.zip
+scripts/aws
+scripts/go-latest
+scripts/rclone
+
