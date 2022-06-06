@@ -1,5 +1,5 @@
 # Rclone configuration for AWS storage
-The text between each rclone configuration selection is omitted for clarity. The region should be set to 3, otherwise transfers will fail.
+The text between each rclone configuration selection is omitted for clarity. The region should be set to 3 (us-west-2), otherwise transfers will fail.
 
 ```console
 [sarawillis@sdmz-dtn-4 ~]$ rclone config
