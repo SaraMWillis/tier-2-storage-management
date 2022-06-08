@@ -40,9 +40,10 @@ e/n/d/r/c/s/q> q
 [sarawillis@sdmz-dtn-4 ~]$ rclone ls AWS:your-bucket-name
 ... ### your bucket contents ###
 ```
-# Storage classes:
 
-```
+## Storage classes
+
+```text
 The storage class to use when storing new objects in S3.
 Enter a string value. Press Enter for the default ("").
 Choose a number from below, or type in your own value
