@@ -1,5 +1,8 @@
 # Install 
 
+Note that the updated `rclone` contains some backend commands via `rclone backend <subcmd>`.
+Prefer using `rclone backend` to AWS-CLI to avoid using different secrets for an operation.
+
 Information on installing: https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html
 
 ```console
