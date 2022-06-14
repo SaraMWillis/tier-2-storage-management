@@ -2,11 +2,14 @@
 
 ## Generate Google Drive API
 
+TODO. Consult rclone's [documentation](https://rclone.org/drive)
 
 ## rclone config
+
 Configuring Google Drive requires a web browser. You could configure with `rclone config` on your local machine, or set up an interactive session to set up the config file.
 
-You could create an "empty" client-id, but with private files, you will need an API key on an account that has access to the shared folders
+You could create an "empty" client-id, but as the [documentation](https://rclone.org/drive/#making-your-own-client-id) says, we would want
+our own client-id to prevent going above 10 transactions per second for best performance.
 
 ```console
 $ rclone config
@@ -49,3 +52,14 @@ y/n> y
 
 - The command line will then show the link to authorize rclone to allow access. The link should be in the following format: `http://127.0.0.1:xxxxx/auth?state=xxxx`
 - Login with your google account.
+
+## Resulting config
+
+```console
+$ rclone config show 
+type = drive
+shared_with_me = true
+alternate_export = true
+token = {"access_token":"XXXX","token_type":"Bearer","refresh_token":"XXXX","expiry":"2022-06-14T12:05:28.228658766-07:00"}
+root_folder_id = 0ALGeHx5wl-0VUk9PVA
+```
