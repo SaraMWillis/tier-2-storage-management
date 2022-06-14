@@ -1,11 +1,12 @@
 # Rclone configuration for AWS storage
+
 The text between each rclone configuration selection is omitted for clarity. The region should be set to 3 (us-west-2), otherwise transfers will fail.
 
 ```console
 [sarawillis@sdmz-dtn-4 ~]$ rclone config
 e/n/d/r/c/s/q> n
 name> AWS
-Storage> 4
+Storage> s3
 provider> 1
 env_auth> 1
 access_key_id> YOUR_KEY_ID_HERE
