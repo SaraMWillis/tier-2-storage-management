@@ -16,7 +16,7 @@ git pull
 
 # Based on instructions at https://rclone.org/install/#install-from-source
 
-# Skip `module load go` because at the time, go version too low
+# Skip `module load go` because at the time, go version too low to compile rclone
 go build
 
 if ! ./rclone version; then

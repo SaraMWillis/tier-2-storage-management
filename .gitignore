@@ -6,3 +6,4 @@ scripts/rclone
 tmp
 */tmp
 .env
+sync_to_xdisk.sh

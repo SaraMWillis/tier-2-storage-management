@@ -1,4 +1,8 @@
 #!/usr/bin/env bash
+
+# Gets a new version of go
+# this is particularly useful if we're updating to higher version of rclone.
+
 if ! git clone https://go.googlesource.com/go go-latest 1>/dev/null 2>/dev/null
 then
   echo "ERROR: Unable to fetch go source at https://go.googlesource.com/go"

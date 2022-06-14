@@ -1,3 +1,0 @@
-[submodule "test_objects/unique_name_generator"]
-	path = test_objects/unique_name_generator
-	url = https://github.com/Pegasust/unique_name_generator
