@@ -1,22 +1,25 @@
 # Rclone configuration for AWS storage
-The text between each rclone configuration selection is omitted for clarity. The region should be set to 3, otherwise transfers will fail.
+
+The text between each rclone configuration selection is omitted for clarity. The region should be set to us-west-2, otherwise transfers will fail.
+
+Note that number options are very susceptible to changes. Hence, we're showing the configuration using the name of the option instead of its number.
 
 ```console
 [sarawillis@sdmz-dtn-4 ~]$ rclone config
 e/n/d/r/c/s/q> n
 name> AWS
-Storage> 4
-provider> 1
-env_auth> 1
+Storage> s3
+provider> AWS
+env_auth> false
 access_key_id> YOUR_KEY_ID_HERE
 secret_access_key> YOUR_SECRET_ACCESS_KEY_HERE
-region> 3
+region> us-west-2
 endpoint> 
 location_constraint> 
 acl> 
 server_side_encryption> 
 sse_kms_key_id> 
-storage_class> 8
+storage_class> INTELLIGENT_TIERING
 Edit advanced config? (y/n)
 y) Yes
 n) No
@@ -40,9 +43,10 @@ e/n/d/r/c/s/q> q
 [sarawillis@sdmz-dtn-4 ~]$ rclone ls AWS:your-bucket-name
 ... ### your bucket contents ###
 ```
-# Storage classes:
 
-```
+## Storage classes
+
+```text
 The storage class to use when storing new objects in S3.
 Enter a string value. Press Enter for the default ("").
 Choose a number from below, or type in your own value

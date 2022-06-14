@@ -1,0 +1,9 @@
+scripts/*.zip
+scripts/aws
+scripts/go-latest
+scripts/rclone
+
+tmp
+*/tmp
+.env
+sync_to_xdisk.sh
